@@ -2,9 +2,19 @@
 
 This module provides a few combinatoric functions.
 
-## Functions
+## USAGE
 
-### multi-combinations
+The functions in this module can be selectively imported, eg.
+
+    use Math::Combinatorics < multicombinations variations >;
+
+Or you can import everything with the `:ALL` tag
+
+    use Math::Combinatorics :ALL;
+    
+## FUNCTIONS
+
+### multicombinations
 
 Also known as 'combinations with replacement', 'k-multicombinations', or 'multisubsets'
 
@@ -40,15 +50,22 @@ Essentially the permutations where no element is in it's original place
 
   > implemented in Raku
 
+### factorial and subfactorial
+
+Since several functions rely on getting the factorial (or subfactorial) of a number, I have those functions defined as well.
+
+    say factorial(6);  # OUTPUT: 720
+    say factorial(6);  # OUTPUT: 256
+
 ## NOTES
 
 The goal of this module is to be something similar to Perl's [Algorithm::Combinatorics](https://metacpan.org/pod/Algorithm::Combinatorics), implemented in NQP for fast performance. Not all functions are implemented in NQP, and if there's a function you'd like to add, I'm happy to accept pull requests for more algorithms, even in pure Raku. I - or others - can always work towards translating them to NQP later as time permits.
 
 ## CAVEATS & LIMITATIONS
 
-I held of on publishing this module for many years because I wanted to polish it, provide more functions, and implement faster `.skip` on things like permutations, where the n-th permutation in a sequence can be determined algorithmically. Unfortunately, I have learned that my life doesn't always permit the long periods of time to dedicate to this.
+I held off on publishing this module for many years because I wanted to polish it, provide more functions, and implement faster `.skip` on things like `permutations` (where the n-th permutation in a sequence can be determined algorithmically). Unfortunately, I have learned that my life doesn't always permit the long periods of time to dedicate to this.
 
-I'm not a core, and my skill with NQP is that of a beginner, so I may not have written _the most_ efficient, however the implementations written in NQP should at least be noticeably faster than most pure-Raku functions implementing the same algorithms.
+My skill with NQP is that of a amateur, so I may not have written the _most_ efficient code, however the implementations written in NQP should at least be noticeably faster than most pure-Raku functions implementing the same algorithms.
 
 As always - pull requests are welcome, both for new functions, and improvements to the existing ones.
 
