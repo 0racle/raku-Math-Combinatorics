@@ -1,5 +1,3 @@
-#!/usr/bin/env perl6
-
 use v6.c;
 use Test;
 use lib $?FILE.IO.parent ~ '/../lib';
@@ -77,4 +75,4 @@ sub TEST-ITER-OPT (\iter, \data, \n, $desc,) {
 
 done-testing;
 
-# vim: ft=perl6
+# vim: ft=raku
