@@ -5,7 +5,12 @@
    "perl" : "6.c",
    "authors" : [ "Joshua Yeshouroun" ],
    "provides" : {
-      "Math::Combinatorics" : "lib/Math/Combinatorics.pm6"
+      "Math::Combinatorics" : "lib/Math/Combinatorics.rakumod",
+      "Math::Combinatorics::Multicombinations" : "lib/Math/Combinatorics/Multicombinations.rakumod",
+      "Math::Combinatorics::Variations" : "lib/Math/Combinatorics/Variations.rakumod",
+      "Math::Combinatorics::Partitions" : "lib/Math/Combinatorics/Partitions.rakumod",
+      "Math::Combinatorics::Derangements" : "lib/Math/Combinatorics/Derangements.rakumod",
+      "Math::Combinatorics::Utils" : "lib/Math/Combinatorics/Utils.rakumod"
    },
    "depends" : [ ],
    "source-url" : "git://github.com/0racle/raku-Math-Combinatorics.git",
