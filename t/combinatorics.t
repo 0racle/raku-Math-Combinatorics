@@ -3,7 +3,7 @@
 use v6.c;
 use Test;
 use lib $?FILE.IO.parent ~ '/../lib';
-use Combinatorics :ALL;
+use Math::Combinatorics :ALL;
 
 is-deeply
   multicombinations(<A B C D>, 2),
