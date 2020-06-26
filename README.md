@@ -53,3 +53,7 @@ I'm not a core, and my skill with NQP is that of a beginner, so I may not have w
 As always - pull requests are welcome, both for new functions, and improvements to the existing ones.
 
 ## LICENSE
+
+    The Artistic License 2.0
+
+See LICENSE file in the repository for the full license text.
