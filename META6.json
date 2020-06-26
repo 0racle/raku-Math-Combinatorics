@@ -1,0 +1,13 @@
+{
+   "name" : "Math::Combinatorics",
+   "version" : "0.0.1",
+   "description" : "Combinatoric functions",
+   "perl" : "6.c",
+   "authors" : [ "Joshua Yeshouroun" ],
+   "provides" : {
+      "File::Stat" : "lib/Math/Combinatorics.pm6"
+   },
+   "depends" : [ ],
+   "source-url" : "git://github.com/0racle/raku-Math-Combinatorics.git",
+   "license"    : "Artistic-2.0"
+}
