@@ -54,8 +54,8 @@ Essentially the permutations where no element is in it's original place
 
 Since several functions rely on getting the factorial (or subfactorial) of a number, I have those functions defined as well.
 
-    say factorial(6);  # OUTPUT: 720
-    say factorial(6);  # OUTPUT: 256
+    say factorial(6);     # OUTPUT: 720
+    say subfactorial(6);  # OUTPUT: 256
 
 ## NOTES
 
