@@ -1,6 +1,6 @@
 {
    "name" : "Math::Combinatorics",
-   "version" : "0.0.3",
+   "version" : "0.0.4",
    "description" : "Combinatoric functions",
    "perl" : "6.c",
    "authors" : [ "Joshua Yeshouroun" ],
