@@ -1,9 +1,14 @@
 {
+   "auth": "zef:elcaro",
    "name" : "Math::Combinatorics",
-   "version" : "0.0.4",
+   "version" : "0.0.5",
    "description" : "Combinatoric functions",
-   "perl" : "6.c",
-   "authors" : [ "Joshua Yeshouroun" ],
+   "tags": [
+       "combinatorics", "itertools",
+       "permutation", "combinations", "derangement", "partition"
+   ],
+   "authors": [ "github:0racle" ],
+   "raku" : "6.c",
    "provides" : {
       "Math::Combinatorics" : "lib/Math/Combinatorics.rakumod",
       "Math::Combinatorics::Multicombinations" : "lib/Math/Combinatorics/Multicombinations.rakumod",

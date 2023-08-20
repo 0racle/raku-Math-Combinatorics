@@ -1,6 +1,6 @@
 # Math::Combinatorics
 
-This module provides a few combinatoric functions.
+This module provides a few functions for generating combinatoric sequences.
 
 ## USAGE
 
@@ -18,8 +18,10 @@ Or you can import everything with the `:ALL` tag
 
 Also known as 'combinations with replacement', 'k-multicombinations', or 'multisubsets'
 
-    say multicombinations(<A B C D>, 2);
-    # OUTPUT: ((A A) (A B) (A C) (A D) (B B) (B C) (B D) (C C) (C D) (D D))
+```raku
+say multicombinations(<A B C D>, 2);
+# OUTPUT: ((A A) (A B) (A C) (A D) (B B) (B C) (B D) (C C) (C D) (D D))
+```
 
   > Implemented in NQP
 
@@ -27,8 +29,10 @@ Also known as 'combinations with replacement', 'k-multicombinations', or 'multis
 
 Also known as 'k-permutations of n'. I opted to give this the more archaic name of `variations` rather than creating a multi of `permutations`.
 
-    say variations(<A B C D>, 2);
-    # OUTPUT: ((A B) (A C) (A D) (B A) (B C) (B D) (C A) (C B) (C D) (D A) (D B) (D C))
+```raku
+say variations(<A B C D>, 2);
+# OUTPUT: ((A B) (A C) (A D) (B A) (B C) (B D) (C A) (C B) (C D) (D A) (D B) (D C))
+```
 
   > Implemented in NQP
 
@@ -36,8 +40,10 @@ Also known as 'k-permutations of n'. I opted to give this the more archaic name 
 
 Also known as 'integer partitions'.
 
-    say partitions(5);
-    # OUTPUT: ((1 1 1 1 1) (1 1 1 2) (1 1 3) (1 2 2) (1 4) (2 3) (5))
+```raku
+say partitions(5);
+# OUTPUT: ((1 1 1 1 1) (1 1 1 2) (1 1 3) (1 2 2) (1 4) (2 3) (5))
+```
 
   > Implemented in NQP
 
@@ -45,8 +51,10 @@ Also known as 'integer partitions'.
 
 Essentially the permutations where no element is in it's original place
 
-    say derangements(<A B C D>)
-    # OUTPUT: ((B A D C) (B C D A) (B D A C) (C A D B) (C D A B) (C D B A) (D A B C) (D C A B) (D C B A)) 
+```raku
+say derangements(<A B C D>)
+# OUTPUT: ((B A D C) (B C D A) (B D A C) (C A D B) (C D A B) (C D B A) (D A B C) (D C A B) (D C B A))
+```
 
   > implemented in Raku
 
@@ -54,8 +62,10 @@ Essentially the permutations where no element is in it's original place
 
 Since several functions rely on getting the factorial (or subfactorial) of a number, I have those functions defined as well.
 
-    say factorial(6);     # OUTPUT: 720
-    say subfactorial(6);  # OUTPUT: 256
+```raku
+say factorial(6);     # OUTPUT: 720
+say subfactorial(6);  # OUTPUT: 256
+```
 
 ## NOTES
 
