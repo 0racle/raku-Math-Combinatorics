@@ -7,6 +7,7 @@ use Math::Combinatorics::Utils;
 multi sub permutations(@l is copy, :$k) is export { variations(@l, $k); }
 
 multi sub variations(@l is copy, $k) is export {
+    return @l.Seq if @l.elems ≤ 1;
     Seq.new: class :: does Iterator {
         has $!n;
         has $!k;
