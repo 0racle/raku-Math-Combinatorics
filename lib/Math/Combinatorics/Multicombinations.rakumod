@@ -7,7 +7,7 @@ use Math::Combinatorics::Utils;
 proto sub multicombinations(Positional, Int) is export {*}
 
 multi sub multicombinations(@l is copy, $k) {
-    return @l.Seq if @l.elems ≤ 1;
+    return (|@l xx $k) if @l.elems ≤ 1;
     Seq.new: class :: does Iterator {
         has $!e;
         has $!k;
