@@ -5,7 +5,7 @@ my @EXPORT_OK = <
 >;
 
 my %exportable;
-module Math::Combinatorics:ver<0.0.7> {
+module Math::Combinatorics:ver<0.0.8> {
     use Math::Combinatorics::Multicombinations;
     use Math::Combinatorics::Variations;
     use Math::Combinatorics::Partitions;

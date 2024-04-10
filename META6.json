@@ -1,7 +1,7 @@
 {
    "auth": "zef:elcaro",
    "name" : "Math::Combinatorics",
-   "version" : "0.0.7",
+   "version" : "0.0.8",
    "description" : "Combinatoric functions",
    "tags": [
        "combinatorics", "itertools",
